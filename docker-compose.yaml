@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  alive:
+    image: wbchn/oracle-alive:latest
+    container_name: alive
+    command: /app/NeverIdle -c 1h -m 2 -n 2h21m
+    restart: always

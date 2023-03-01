@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  alive:
+    build:
+      context: "."
+      dockerfile: dockerfile
+    container_name: alive
+    command: /app/NeverIdle -c 1h -m 1 -n 2h21m
+    restart: always
